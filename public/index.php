@@ -2,4 +2,7 @@
 
 require '../vendor/autoload.php';
 
-$user = new User();
+use App\Database\Models\User;
+
+$user = new User('steve');
+// unset($user);
